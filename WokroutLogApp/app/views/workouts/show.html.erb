@@ -1,18 +1,18 @@
-<h1><%= @workout.name %></h1>
+<h1 class="show-header"><%= @workout.name %></h1>
 
-<h3>Wokrout Type: <%= @workout.name %></h3>
-<h3>Muscle Group: <%= @workout.muscle_group %></h3>
-<h3>Sets: <%= @workout.sets %></h3>
-<h3>Reps: <%= @workout.reps %></h3>
-<h3>Weight: <%= @workout.weight %></h3>
-<h3>Date: <%= @workout.date %></h3>
+<h3 class="workout-info">Wokrout Type: <%= @workout.name %></h3>
+<h3 class="workout-info">Muscle Group: <%= @workout.muscle_group %></h3>
+<h3 class="workout-info">Sets: <%= @workout.sets %></h3>
+<h3 class="workout-info">Reps: <%= @workout.reps %></h3>
+<h3 class="workout-info">Weight: <%= @workout.weight %></h3>
+<h3 class="workout-info">Date: <%= @workout.date %></h3>
 
-<%= link_to "Edit #{@workout.name}", edit_workout_path(@workout) %>
+<%= link_to "Edit #{@workout.name}", edit_workout_path(@workout), :class => 'list-link' %>
 
 <%= form_for @workout, html: {method: 'delete'} do |f| %>
 	<%= f.submit "Delete Workout" %>
 <% end %>
 
-<%= link_to "All Workouts", workouts_path %>
+<%= link_to "All Workouts", workouts_path, :class => 'show-allworkouts' %>
 
 <%= render partial: 'footer' %>
