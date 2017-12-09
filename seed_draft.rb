@@ -17,9 +17,9 @@ m_four = Motivation.create!(content: "When it is obvious that the goals cannot b
 m_five = Motivation.create!(content: "Our greatest glory is not in never falling, but in rising every time we fall-- Confucius")
 m_six = Motivation.create!(content: "You miss 100% of the shots you don't take-- Wayne Gretzky")
 m_seven = Motivation.create!(content: "90% of hockey is mental and the other half is physical-- Wayne Gretzky")
-m_eight = Motivation.create!("Procrastination is one of the most common and deadliest diseases and its toll on success and happiness is heavy-- Wayne Gretzky")
-m_nine = Motivation.create!("It ain't over till it's over-- Yogi Berra")
-m_ten = Motivation.create!("If you're afraid to fail, then you're probably going to fail-- Kobe Bryant")
+m_eight = Motivation.create!(content: "Procrastination is one of the most common and deadliest diseases and its toll on success and happiness is heavy-- Wayne Gretzky")
+m_nine = Motivation.create!(content: "It ain't over till it's over-- Yogi Berra")
+m_ten = Motivation.create!(content: "If you're afraid to fail, then you're probably going to fail-- Kobe Bryant")
 
 #Workout Log
 
