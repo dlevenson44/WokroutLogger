@@ -9,6 +9,21 @@ class WorkoutsController < ApplicationController
 		@motivations = Motivation.all
 	end
 
+	def new
+		@workout = Workout.create
+		@motivations = Motivation.all
+	end
+
+	def create
+		@workout = Workout.new(workout_params)
+		@motivations = Motivation.all
+		if @workout.save
+			redirect_to workout_path(@workout)
+		else
+			render :new
+		end
+	end
+
 	def edit
 		@workout = Workout.find(params[:id])
 		@motivations = Motivation.all
