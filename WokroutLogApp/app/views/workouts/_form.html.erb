@@ -1,9 +1,9 @@
 <%= form_for @workout do |f| %>
-	<%= f.text_field :name, placeholder: "Name of Workout" %>
-	<%= f.text_field :muscle_group, placeholder: "Muscle Group" %>
-	<%= f.number_field :sets, placeholder: "Sets" %>
-	<%= f.number_field :reps, placeholder: "Reps" %>
-	<%= f.number_field :weight, placeholder: "Weight (if applicable)" %>
-	<%= f.text_field :date, placeholder: "Date" %>
-	<%= f.submit "Submit" %>
+	<%= f.text_field :name, placeholder: "Name of Workout", :class => 'workout-field' %>
+	<%= f.text_field :muscle_group, placeholder: "Muscle Group", :class => 'workout-field' %>
+	<%= f.number_field :sets, placeholder: "Sets", :class => 'workout-field' %>
+	<%= f.number_field :reps, placeholder: "Reps", :class => 'workout-field' %>
+	<%= f.number_field :weight, placeholder: "Weight (if applicable)", :class => 'workout-field' %>
+	<%= f.text_field :date, placeholder: "Date", :class => 'workout-field' %>
+	<%= f.submit "Submit", :class => 'workout-submit'%>
 <% end %>
