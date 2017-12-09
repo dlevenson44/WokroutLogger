@@ -10,7 +10,7 @@ class WorkoutsController < ApplicationController
 	end
 
 	def new
-		@workout = Workout.create
+		@workout = Workout.new
 		@motivations = Motivation.all
 	end
 
