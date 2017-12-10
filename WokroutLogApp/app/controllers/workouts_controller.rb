@@ -1,7 +1,8 @@
 class WorkoutsController < ApplicationController
 	def index
 		@workouts = Workout.all
-		@motivations = Motivation.all
+		num = rand(1..10)
+		@motivation = Motivation.find(num)
 	end
 
 	def show

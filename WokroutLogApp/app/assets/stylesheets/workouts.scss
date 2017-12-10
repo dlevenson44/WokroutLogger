@@ -1,3 +1,27 @@
-// Place all the styles related to the workouts controller here.
+/*// Place all the styles related to the workouts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.index-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 890px;
+}
+
+.index-subcont {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.workout-ul {
+	border: 1px solid black;
+}
+
+.partial-footer {
+
+}

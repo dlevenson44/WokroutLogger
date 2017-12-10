@@ -1,11 +1,15 @@
 <div class="index-container">
 	<h1 class="list-header"> All of the workouts </h1>
-
+	<form class="index-form" action="http://localhost:3000/workouts/new">
+		<button class="index-add">Add Workout</button>
+	</form>
+	<div class="index-subcont">
 	<ul class="workout-ul">
 		<% @workouts.each do |workout| %>
-		<li class="workout-li"><%= link_to workout.name, workout_path(workout)%></li>
+		<li class="workout-li"><%= link_to workout.name, workout_path(workout)%>, <%= workout.date %></li>
 		<% end %>
 	</ul>
-
+	<%= render partial: 'quote' %>
+	</div>
 	<%= render partial: 'footer' %>
 </div>
