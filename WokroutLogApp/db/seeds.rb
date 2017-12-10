@@ -9,7 +9,7 @@ m_six = Motivation.create!(quote: "You miss 100% of the shots you don't take.", 
 m_seven = Motivation.create!(quote: "90% of hockey is mental and the other half is physical.", author: "Wayne Gretzky")
 m_eight = Motivation.create!(quote: "Procrastination is one of the most common and deadliest diseases and its toll on success and happiness is heavy.", author: "Wayne Gretzky")
 m_nine = Motivation.create!(quote: "It ain't over till it's over.", author: "Yogi Berra")
-m_ten = Motivation.create!(quote: "If you're afraid to fail, then you're probably going to fail.", author: "Koby Bryant")
+m_ten = Motivation.create!(quote: "If you're afraid to fail, then you're probably going to fail.", author: "Kobe Bryant")
 
 #Workout Log Table
 

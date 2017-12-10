@@ -12,6 +12,37 @@
 	height: 890px;
 }
 
+.list-header {
+	font-family: 'Roboto', sans-serif;
+	color: #E45B4B;
+	font-size: 52px;
+}
+
+.index-form{
+	width: 450px;
+	display: flex;
+	justify-content: center;
+}
+
+.index-add {
+	background-color: #B7E3E4;
+	border: 1px solid black;
+	color: #E54B4B;
+	font-family: 'Roboto', sans-serif;
+	font-size: 32px;
+	margin-bottom: 100px;
+}
+
+.index-add:hover {
+	background-color: white;
+}
+
+.list-subheader {
+	color: #E45B4B;
+	font-family: 'Roboto', sans-serif;
+	font-size: 38px;
+}
+
 .index-subcont {
 	display: flex;
 	flex-direction: row;
@@ -19,9 +50,40 @@
 }
 
 .workout-ul {
-	border: 1px solid black;
+	width: 300px;
+	height: 450px;
+	list-style: none;
+	font-family: 'Roboto', sans-serif;
+	color: #E54B4B;
 }
 
-.partial-footer {
+.workout-li {
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+}
 
+a {
+	color: #E54B4B;
+}
+
+a:hover {
+	color: #E54B4B;
+}
+
+a:visited {
+	color: #E54B4B;
+}
+
+.list-quote {
+	width: 300px;
+	height: 450px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	color: #E54B4B;
+	padding-left: 30px;
+}
+
+.list-footer {
+	font-family: 'Roboto', sans-serif;
+	color: #E54B4B;
 }
