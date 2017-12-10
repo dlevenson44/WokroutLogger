@@ -1,5 +1,13 @@
-<h1 class="root-header"> WORKOUT LOGGER </h1>
-<a class="root-link" href="/workouts/">View Workouts</a>
-<a class="root-link" href="/workouts/new">Add Workout</a>
+<div class="root-container"	>
+	<h1 class="root-header"> WORKOUT LOGGER </h1>
+	<div class="link-container">
+		<form class="root-form" action="http://localhost:3000/workouts">
+			<button class="root-link" id="view-link" href="/workouts/">View Workouts</button>
+		</form>
+		<form class="root-form" action="http://localhost:3000/workouts/new">
+			<button class="root-link" id="new-link" href="/workouts/new">Add Workout</button>
+		</form>
+	</div>
 
-<footer class="root-footer">Made by Dan Levenson, 2017</footer>
+	<footer class="root-footer">Made by Dan Levenson, 2017</footer>
+</div>
