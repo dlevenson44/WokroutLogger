@@ -6,11 +6,6 @@
 
 body {
 	background-color: #B7E3E4;
-/*	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;*/
-
 }
 
 .root-container {
@@ -27,7 +22,6 @@ body {
 }
 
 .root-header {
-	/*margin-top: 100px;*/
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -38,9 +32,15 @@ body {
 }
 
 .root-link {
+	background-color: #B7E3E4;
+	border: 1px solid black;
 	color: #E54B4B;
 	font-family: 'Roboto', sans-serif;
 	font-size: 32px;
+}
+
+.root-link:hover {
+	background-color: white;
 }
 
 #view-link {
