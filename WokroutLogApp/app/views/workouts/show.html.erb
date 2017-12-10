@@ -1,20 +1,32 @@
 <div class="show-container">
-	<h1 class="show-header"><%= @workout.name %></h1>
+	<h1 class="show-header">WORKOUT LOGGER</h1>
+	<form class="show-form" action="http://localhost:3000/workouts">
+		<button class="show-list">View Workouts</button>
+	</form>
+	<div class="show-subcont">
+		<div class="show-info">
+			<h3 class="workout-header"><%= @workout.name %></h3>
 
-	<h3 class="workout-info">Wokrout Type: <%= @workout.name %></h3>
-	<h3 class="workout-info">Muscle Group: <%= @workout.muscle_group %></h3>
-	<h3 class="workout-info">Sets: <%= @workout.sets %></h3>
-	<h3 class="workout-info">Reps: <%= @workout.reps %></h3>
-	<h3 class="workout-info">Weight: <%= @workout.weight %></h3>
-	<h3 class="workout-info">Date: <%= @workout.date %></h3>
+			<h5 class="workout-info">Wokrout Type: <%= @workout.name %></h5>
+			<h5 class="workout-info">Muscle Group: <%= @workout.muscle_group %></h5>
+			<h5 class="workout-info">Sets: <%= @workout.sets %></h5>
+			<h5 class="workout-info">Reps: <%= @workout.reps %></h5>
+			<h5 class="workout-info">Weight: <%= @workout.weight %></h5>
+			<h5 class="workout-info">Date: <%= @workout.date %></h5>
+		</div>
+		<div class="show-quote">
+			<%= render partial: 'quote' %>
+		</div>
+	</div>
+	<div class="show-UD">
+	
 
-	<%= link_to "Edit #{@workout.name}", edit_workout_path(@workout), :class => 'list-link' %>
-
-	<%= form_for @workout, html: {method: 'delete'} do |f| %>
-		<%= f.submit "Delete Workout" %>
-	<% end %>
-
-	<%= link_to "All Workouts", workouts_path, :class => 'show-allworkouts' %>
-
-	<%= render partial: 'footer' %>
+		<%= link_to "Edit Workout", edit_workout_path(@workout), :class => 'show-link' %>
+		<%= form_for @workout, :class => 'show-link', html: {method: 'delete'} do |f| %>
+			<%= f.submit "Delete Workout" %>
+		<% end %>
+	</div>
+	<div class="show-footer">
+		<%= render partial: 'footer' %>
+	</div>
 </div>
