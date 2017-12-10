@@ -6,17 +6,20 @@ class WorkoutsController < ApplicationController
 
 	def show
 		@workout = Workout.find(params[:id])
-		@motivations = Motivation.all
+		num = rand(1..10)
+		@motivation = Motivation.find(num)
 	end
 
 	def new
 		@workout = Workout.new
-		@motivations = Motivation.all
+		num = rand(1..10)
+		@motivation = Motivation.find(num)
 	end
 
 	def create
 		@workout = Workout.new(workout_params)
-		@motivations = Motivation.all
+		num = rand(1..10)
+		@motivation = Motivation.find(num)
 		if @workout.save
 			redirect_to workout_path(@workout)
 		else
@@ -26,7 +29,8 @@ class WorkoutsController < ApplicationController
 
 	def edit
 		@workout = Workout.find(params[:id])
-		@motivations = Motivation.all
+		num = rand(1..10)
+		@motivation = Motivation.find(num)
 	end
 
 	def update
