@@ -1,9 +1,11 @@
-<h1 class="list-header"> All of the workouts </h1>
+<div class="index-container">
+	<h1 class="list-header"> All of the workouts </h1>
 
-<ul class="workout-ul">
-	<% @workouts.each do |workout| %>
-	<li class="workout-li"><%= link_to workout.name, workout_path(workout)%></li>
-	<% end %>
-</ul>
+	<ul class="workout-ul">
+		<% @workouts.each do |workout| %>
+		<li class="workout-li"><%= link_to workout.name, workout_path(workout)%></li>
+		<% end %>
+	</ul>
 
-<%= render partial: 'footer' %>
+	<%= render partial: 'footer' %>
+</div>
