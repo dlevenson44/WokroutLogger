@@ -19,13 +19,10 @@
 		</div>
 	</div>
 	<div class="show-UD">
-		<form class="show-form" action="http://localhost:3000/workouts/<%= @workout %>/edit">
-			<button class="show-link">Edit Wrokout</button>
-		</form>
-<!-- 
-		<%= form_for @workout, :class => 'show-form', url: "" do |f| %>
-			<%= f.submit "Edit Workout", :class => 'show-link' %>
-		<% end %> -->
+
+
+		<%= button_to 'Edit Workout', edit_workout_path(@workout), :class => "show-link", :method => :get %>
+
 		<%= form_for @workout, :class => 'show-link', html: {method: 'delete'} do |f| %>
 			<%= f.submit "Delete Workout", :class => "show-link" %>
 		<% end %>

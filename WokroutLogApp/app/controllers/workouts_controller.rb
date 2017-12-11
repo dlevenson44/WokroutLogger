@@ -41,7 +41,6 @@ class WorkoutsController < ApplicationController
 		else
 			redirect_to workout_edit_path(@workout)
 		end
-		@motivations = Motivation.all
 	end
 
 	def destroy
