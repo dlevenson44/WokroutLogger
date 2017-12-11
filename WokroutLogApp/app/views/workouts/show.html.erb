@@ -6,7 +6,6 @@
 	<div class="show-subcont">
 		<div class="show-info">
 			<h3 class="workout-header"><%= @workout.name %></h3>
-
 			<h5 class="workout-info">Wokrout Type: <%= @workout.name %></h5>
 			<h5 class="workout-info">Muscle Group: <%= @workout.muscle_group %></h5>
 			<h5 class="workout-info">Sets: <%= @workout.sets %></h5>
@@ -19,10 +18,7 @@
 		</div>
 	</div>
 	<div class="show-UD">
-
-
 		<%= button_to 'Edit Workout', edit_workout_path(@workout), :class => "show-link", :method => :get %>
-
 		<%= form_for @workout, :class => 'show-link', html: {method: 'delete'} do |f| %>
 			<%= f.submit "Delete Workout", :class => "show-link" %>
 		<% end %>

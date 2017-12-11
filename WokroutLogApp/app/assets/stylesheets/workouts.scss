@@ -121,10 +121,10 @@ a:visited {
 	color: #E54B4B;
 }
 
-.show-ud {
+.show-UD {
 	display: flex;
-	justify-content: center;
 	flex-direction: row;
+	justify-content: center;
 }
 
 .show-link {
@@ -134,6 +134,8 @@ a:visited {
 	font-size: 32px;
 	margin-bottom: 100px;
 	text-decoration: underline;
+	display: flex;
+	align-items: flex-end;
 }
 
 .show-quote {
