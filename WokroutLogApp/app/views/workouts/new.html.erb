@@ -1,6 +1,12 @@
 <div class="new-container">
-	<h1 class="new-header">Add a new workout</h1>
-	<%= render partial: 'quote' %>
-	<%= render partial: 'form' %>
+	<h1 class="index-header">WORKOUT LOGGER</h1>
+	<form class="show-form" action="http://localhost:3000/workouts">
+		<button class="show-link">View Workouts</button>
+	</form>
+	<h3 class="index-subheader">Fill Out Workout Info Below</h3>
+	<div class="new-subcont">
+		<%= render partial: 'form' %>
+		<%= render partial: 'quote' %>	
+	</div>
 	<%= render partial: 'footer' %>
 </div>
