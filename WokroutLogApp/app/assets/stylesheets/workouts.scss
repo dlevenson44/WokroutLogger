@@ -123,16 +123,17 @@ a:visited {
 
 .show-ud {
 	display: flex;
+	justify-content: center;
 	flex-direction: row;
 }
 
 .show-link {
 	background-color: #B7E3E4;
-	border: 1px solid black;
 	color: #E54B4B;
 	font-family: 'Roboto', sans-serif;
 	font-size: 32px;
 	margin-bottom: 100px;
+	text-decoration: underline;
 }
 
 .show-quote {
