@@ -1,6 +1,12 @@
 <div class="edit-container">
-	<h1 class="edit-header" >edit <%= @workout.name%> </h1>
-	<%= render partial: 'form' %>
-	<%= render partial: 'quote' %>
+	<h1 class="index-header">WORKOUT LOGGER</h1>
+	<form class="show-form" action="http://localhost:3000/workouts">
+		<button class="show-link">View Workouts</button>
+	</form>
+	<h3 class="index-subheader" >Edit Workout Below</h3>
+	<div class="edit-subcont">
+		<%= render partial: 'form' %>
+		<%= render partial: 'quote' %>
+	</div>
 	<%= render partial: 'footer' %>
 </div>
