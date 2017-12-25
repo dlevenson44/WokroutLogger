@@ -1,8 +1,8 @@
 <div class="new-container">
 	<h1 class="index-header">WORKOUT LOGGER</h1>
-	<form class="show-form" action="http://localhost:3000/workouts">
-		<button class="show-link">View Workouts</button>
-	</form>
+	<div class="show-form">
+		<%= button_to 'View Workouts', workouts_path(@workouts), :class => "show-link", :method => :get %>		
+	</div>
 	<h3 class="index-subheader">Fill Out Workout Info Below</h3>
 	<div class="new-subcont">
 		<%= render partial: 'form' %>
