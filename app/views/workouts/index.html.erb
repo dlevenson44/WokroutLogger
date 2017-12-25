@@ -1,8 +1,8 @@
 <div class="index-container">
 	<h1 class="index-header">WORKOUT LOGGER</h1>
-	<form class="index-form" action="http://localhost:3000/workouts/new">
-		<button class="index-add">Add Workout</button>
-	</form>
+	<div class="index-form" action="http://localhost:3000/workouts/new">
+		<%= button_to 'Add Workout', new_workout_path(@workout), :class => "show-link", :method => :get %>
+	</div>
 	<h3 class="index-subheader">Workout Log Below</h3>
 	<div class="index-subcont">
 		<ul class="workout-ul">
@@ -19,3 +19,5 @@
 	</div>
 </div>
 
+
+<button class="show-link">View Workouts</button>
