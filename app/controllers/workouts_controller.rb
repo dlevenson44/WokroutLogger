@@ -7,6 +7,7 @@ class WorkoutsController < ApplicationController
 
 	def show
 		@workout = Workout.find(params[:id])
+		@workouts = Workout.all.order(id: :desc)
 		num = rand(1..10)
 		@motivation = Motivation.find(num)
 	end
