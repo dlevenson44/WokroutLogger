@@ -1,6 +1,24 @@
-# WorkoutLogger
+# README
 
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-WorkoutLogger will allow you to keep track of your workouts and motivate you along the way!  Click the Add button from the homescreen to create a new workout entry, fillout the form, and click submit for the post to be created!  You can also click on the View Workout Log page to see existing content, and click on individual workouts to see more information about them, edit them, or delete them.
+Things you may want to cover:
 
-The add workout, edit/delete workout, workout view, and workout list screens all render a randomly selected motiational quote to keep you going!
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
