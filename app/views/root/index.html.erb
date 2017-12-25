@@ -1,12 +1,12 @@
 <div class="root-container"	>
 	<h1 class="root-header"> WORKOUT LOGGER </h1>
 	<div class="link-container">
-		<form class="root-form" action="http://localhost:3000/workouts">
-			<button class="root-link" id="view-link"">View Workouts</button>
-		</form>
-		<form class="root-form" action="http://localhost:3000/workouts/new">
-			<button class="root-link" id="new-link">Add Workout</button>
-		</form>
+		<div class="root-form">
+			<%= button_to 'View Workouts', workouts_path(@workouts), :class => "root-link", :method => :get %>		
+		</div>
+		<div class="root-form">
+			<%= button_to 'Add Workout', new_workout_path(@workout), :class => "root-link", :method => :get %>
+		</div>
 	</div>
 
 	<footer class="root-footer">Made by Dan Levenson, 2017</footer>
