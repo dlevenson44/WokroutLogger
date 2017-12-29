@@ -1,11 +1,11 @@
 <div class="form-container">
 	<%= form_for @workout do |f| %>
-		<p class="workout-field"> Name of Workout:  <%= f.text_field :name, placeholder: "Name of Workout", :class => 'workout-field' %></p>
-		<p class="workout-field">Muslce Group:  <%= f.text_field :muscle_group, placeholder: "Muscle Group", :class => 'workout-field' %></p>
-		<p class="workout-field">Sets:  <%= f.number_field :sets, placeholder: "Sets", :class => 'workout-field' %></p>
-		<p class="workout-field">Reps:  <%= f.number_field :reps, placeholder: "Reps", :class => 'workout-field' %></p>
+		<p class="workout-field"> Name of Workout:  <%= f.text_field :name, placeholder: "Name of Workout", required: true, :class => 'workout-field' %></p>
+		<p class="workout-field">Muslce Group:  <%= f.text_field :muscle_group, placeholder: "Muscle Group", required: true, :class => 'workout-field' %></p>
+		<p class="workout-field">Sets:  <%= f.number_field :sets, placeholder: "Sets", required: true, :class => 'workout-field' %></p>
+		<p class="workout-field">Reps:  <%= f.number_field :reps, placeholder: "Reps", required: true, :class => 'workout-field' %></p>
 		<p class="workout-field">Weight:  <%= f.number_field :weight, placeholder: "Weight (if applicable)", :class => 'workout-field' %></p>
-		<p class="workout-field">Date:  <%= f.text_field :date, placeholder: "Date", :class => 'workout-field' %></p>
+		<p class="workout-field">Date:  <%= f.text_field :date, placeholder: "Date", required: true, :class => 'workout-field' %></p>
 		<%= f.submit "Submit", :class => 'show-link'%>
 	<% end %>
 </div>
