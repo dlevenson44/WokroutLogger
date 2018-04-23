@@ -1,24 +1,5 @@
-# README
+#Workout Logger
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Users log into the page and can view logged workouts or click to create a new one.  Users can easily navigate through the app to add new entries or view, edit, or delete existing ones.  A second table containing several motivational quotes will be rendered on each page to inspire users.  <br />
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Built with Ruby on Rails, deployed on Heroku.
