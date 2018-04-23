@@ -6,11 +6,14 @@
 	<h3 class="index-subheader">Workout Log Below</h3>
 	<div class="index-subcont">
 		<ul class="workout-ul">
+			<%# for each workout  %>
 			<% @workouts.each do |workout| %>
+			<%# create a list item for each workout that will link to the show view %>
 			<li class="workout-li"><%= link_to workout.name, workout_path(workout)%>, <%= workout.date %></li>
 			<% end %>
 		</ul>
 		<div class="index-quote">
+			<%# render quote partial %>
 			<%= render partial: 'quote'%>
 		</div>
 	</div>

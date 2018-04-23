@@ -1,10 +1,12 @@
 <div class="edit-container">
 	<h1 class="index-header">WORKOUT LOGGER</h1>
 	<div class="show-form">
+		<%# list button to view all workouts %>
 		<%= button_to 'View Workouts', workouts_path(@workouts), :class => "show-link", :method => :get %>		
 	</div>
 	<h3 class="index-subheader" >Edit Workout Below</h3>
 	<div class="edit-subcont">
+		<%# render form and quote partials %>
 		<%= render partial: 'form' %>
 		<%= render partial: 'quote' %>
 	</div>

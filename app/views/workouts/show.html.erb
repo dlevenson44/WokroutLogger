@@ -1,10 +1,12 @@
 <div class="show-container">
 	<h1 class="show-header">WORKOUT LOGGER</h1>
 	<div class="show-form">
+		<%# link to index workouts view %>
 		<%= button_to 'View Workouts', workouts_path(@workouts), :class => "show-link", :method => :get %>		
 	</div>
 	<div class="show-subcont">
 		<div class="show-info">
+			<%# show workout information %>
 			<h3 class="workout-header"><%= @workout.name %></h3>
 			<h5 class="workout-info">Wokrout Type: <%= @workout.name %></h5>
 			<h5 class="workout-info">Muscle Group: <%= @workout.muscle_group %></h5>
@@ -14,11 +16,14 @@
 			<h5 class="workout-info">Date: <%= @workout.date %></h5>
 		</div>
 		<div class="show-quote">
+			<%# render quote partial %>
 			<%= render partial: 'quote' %>
 		</div>
 	</div>
 	<div class="show-UD">
+		<%# link to edit workout view %>
 		<%= button_to 'Edit Workout', edit_workout_path(@workout), :class => "show-link", :method => :get %>
+		<%# create form and button to delete workout %>
 		<%= form_for @workout, :class => 'show-link', html: {method: 'delete'} do |f| %>
 			<%= f.submit "Delete Workout", :class => "show-link" %>
 		<% end %>
