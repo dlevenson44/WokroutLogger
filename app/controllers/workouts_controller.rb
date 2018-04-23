@@ -31,28 +31,46 @@ class WorkoutsController < ApplicationController
 		@motivation = Motivation.find(num)
 	end
 
+	# create method
 	def create
+		# create a new workout with params from private method
 		@workout = Workout.new(workout_params)
+		# set variable to random number
 		num = rand(1..10)
+		# declare quote variable
 		@motivation = Motivation.find(num)
+		# if the workout is saved successfully
 		if @workout.save
+			# redirect to the show page of that workout
 			redirect_to workout_path(@workout)
+		# otherwise
 		else
+			# refresh the New page
 			render :new
 		end
 	end
 
+	# edit method
 	def edit
+		# pull in set workout
 		@workout = Workout.find(params[:id])
+		# pull random number
 		num = rand(1..10)
+		# set variable to random quote
 		@motivation = Motivation.find(num)
 	end
 
+	# update method
 	def update
+		# set selected workout to variable
 		@workout = Workout.find(params[:id])
+		# if the workout is successfully updated
 		if @workout.update(workout_params)
+			# redirect to the updated workouts page
 			redirect_to workout_path(@workout)
+		# otherwise
 		else
+			# refresh the page
 			redirect_to workout_edit_path(@workout)
 		end
 	end
