@@ -1,4 +1,6 @@
 <div class="form-container">
+	<%# create form to set values to be edited or created in entry %>
+	<%# each field represents a different column in the workouts table %>
 	<%= form_for @workout do |f| %>
 		<p class="workout-field"> Name of Workout:  <%= f.text_field :name, placeholder: "Name of Workout", required: true, :class => 'workout-field' %></p>
 		<p class="workout-field">Muslce Group:  <%= f.text_field :muscle_group, placeholder: "Muscle Group", required: true, :class => 'workout-field' %></p>
